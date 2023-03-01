@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{ weather.city }} Weather</title>
+  </head>
+  <body>
+    <h1>{{ weather.city }} Weather</h1>
+    <p>{{ weather.description }}</p>
+    <img src="http://openweathermap.org/img/w/{{ weather.icon }}.png" alt="Weather icon">
+    <p>Temperature:</p>
+    <ul>
+      <li>{{ weather.temperature.celsius }} &deg;C</li>
+      <li>{{ weather.temperature.fahrenheit }} &deg;F</li>
+      <li>{{ weather.temperature.kelvin }} K</li>
+    </ul>
+    <p>Humidity: {{ weather.humidity }}%</p>
+    <p>Wind Speed: {{ weather.wind_speed }} m/s</p>
+	<form action="/">
+		<input type="submit" value="Go Back to Home">
+	  </form>
+  </body>
+</html>

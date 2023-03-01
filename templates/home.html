@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Weather App</title>
+  </head>
+  <body>
+    {% if error_message %}
+      <p>{{ error_message }}</p>
+    {% endif %}
+    <form action="/weather" method="post">
+      <label for="city">Enter a city:</label>
+      <input type="text" id="city" name="city" required>
+      <button type="submit">Get Weather</button>
+    </form>
+  </body>
+</html>
