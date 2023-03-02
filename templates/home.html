@@ -2,15 +2,21 @@
 <html>
   <head>
     <title>Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   </head>
   <body>
-    {% if error_message %}
-      <p>{{ error_message }}</p>
-    {% endif %}
+    <div id="main_content">
+      
+
+    <h1>WEATHER APP</h1>
     <form action="/weather" method="post">
       <label for="city">Enter a city:</label>
       <input type="text" id="city" name="city" required>
       <button type="submit">Get Weather</button>
     </form>
+    {% if error_message %}
+      <p id = "error_message">{{ error_message }}</p>
+    {% endif %}
+    </div>
   </body>
 </html>

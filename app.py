@@ -1,4 +1,3 @@
-import os
 import requests
 from flask import Flask, render_template, request
 
@@ -30,7 +29,7 @@ def weather():
         }
         return render_template('weather.html', weather=weather)
     else:
-        error_message = weather_data.get('message', 'Unknown error')
+        error_message = weather_data.get('message', 'Unknown error').capitalize()
         return render_template('home.html', error_message=error_message)
 
 if __name__ == '__main__':

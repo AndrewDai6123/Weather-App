@@ -1,0 +1,54 @@
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url("https://wallpaperaccess.com/full/31203.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* set the height of the body to 100% of the viewport height */
+  }
+  
+  #main_content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h1 {
+    color: white;
+    margin: 0 auto;
+    position: relative;
+    font-size: 1in;
+  }
+  
+  form {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 24px;
+    border: 1px solid #ccc;
+    width: 40%;
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  
+  #error_message {
+    color: red;
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
